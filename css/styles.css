@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: var(--text-color);
   background-color: var(--primary-white-color);
 }
@@ -38,11 +38,10 @@ nav {
   color: var(--dark-color);
 }
 
-address {
+/* <<< COMMON >>> */
+.address {
   font-style: normal;
 }
-
-/* <<< COMMON >>> */
 
 .list {
   list-style-type: none;
@@ -72,6 +71,7 @@ address {
   font-weight: 700;
   line-height: 1.11;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .title {
@@ -80,26 +80,36 @@ address {
   line-height: 1.2;
 }
 
+.text {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
 /* <<< /COMMON >>> */
 
 /* <<< HEADER >>> */
 
-.page-logo-header {
+.page-logo {
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-brand-color);
 }
 
-.page-logo-header:visited,
-.menu-item .link:visited {
+.page-logo-header {
   color: var(--dark-color);
 }
 
-.page-logo-accent {
-  color: var(--primary-brand-color);
+.menu-item .link {
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.menu-item .link:visited {
+  color: var(--dark-color);
 }
 
 /* .current {
@@ -147,11 +157,9 @@ address {
   color: var(--primary-white-color);
 
   font-weight: 500;
-  letter-spacing: 0.04;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   text-align: center;
-
-  /* border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px #00000026; */
 }
 
 .primary-btn:hover,
@@ -174,40 +182,38 @@ address {
 
 .team-item {
   background-color: var(--primary-white-color);
-
-  /* box-shadow: 0px 2px 1px 0px #2e2f4214;
-  box-shadow: 0px 1px 1px 0px #2e2f4229;
-  box-shadow: 0px 1px 6px 0px #2e2f4214; */
 }
 /* <<< /OUR TEAM >>> */
 
+/* <<< FOOTER >>> */
 .page-footer {
   background-color: var(--dark-color);
 }
 
 .page-logo-footer {
-  font-family: var(--secondary-font);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03;
-  text-transform: uppercase;
   color: var(--light-cloud-color);
 }
 
 .footer-text {
   color: var(--light-cloud-color);
+  letter-spacing: 0.02em;
 }
+
+/* <<< /FOOTER >>> */
 
 .filter-btn {
   border: 1px solid var(--accent-color);
-  /* border-radius: 4px; */
   background-color: var(--light-cloud-color);
   color: var(--primary-brand-color);
 
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.04;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -215,10 +221,7 @@ address {
   background-color: var(--hover-state-color);
   color: var(--primary-white-color);
 
-  /* border: none;
-  box-shadow: 0px 2px 2px 0px #0000001f;
-  box-shadow: 0px 2px 1px 0px #00000014;
-  box-shadow: 0px 3px 1px 0px #0000001a; */
+  /* border: none;  */
 }
 
 .work-item {
